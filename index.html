@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Call to Action 1</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="collaborationSlides">
+					<section id="learningPath3">
+						<h3>Collaboration in Postman</h3>
+						<p style="font-size: large;">Postman enables you to collaborate across your organization or across the world. The collaborative nature of Postman ensures that communication throughout API development never has to be a hurdle when forking, merging, writing documentation, making pull requests, and asking for feedback on changes for example.</p>
+						<img src="images/collaborateHero.svg" style="width: 50%; height: 50%">
+						<p style="font-size: medium;"> Select the <img src="images/downArrow.png" alt="down" style="width: 15px; height: 15px"> arrow on the bottom right of this slide to continue to the topics covered in this learning path.</p>
+					</section>
+					<section>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="#workspaces">Workspaces</a>
+							</li>
+							<li class="list-group-item"><a href="#roles">Roles</a>
+							</li>
+							<li class="list-group-item"><a href="#sharing">Sharing</a>
+							</li>
+							<li class="list-group-item"><a href="#commenting">Commenting</a>
+							</li>
+							<li class="list-group-item"><a href="#versionControl">Version Control</a>
+							</li>
+							<li class="list-group-item"><a href="#apiNetwork">API Network</a>
+							</li>
+							<li class="list-group-item"><a href="#knowledgeCheck3">Knowledge Check</a>
+							</li>
+						</ul>
+					</section>
+					<section id="workspaces">
+						<h4>Workspaces</h4>
+						<p>There are many different ways to collaborate within Postman. To begin, let's review some key concepts about workspaces.</p>
+						<img src="images/workspaceIntro.gif"/>
+					</section>
+					<section>
+						<p>Workspaces allow users to <strong>group</strong> related APIs, collections, environments, mocks, and monitors. There are four levels of visibility in workspaces.</p> <br>
+						<ol style="font-size: large;">
+							<li>
+								<strong>Public</strong> - These workspaces enable collaboration on elements with anyone across the world.<a href="https://youtu.be/LYDtomysuBw" target="_blank"> More info in this video.</a> (10 minutes)
+							</li>
+							<li>
+								<strong>Team</strong> - These workspaces enable access to be shared and managed with a team. <a href="https://youtu.be/5lscUV-Exac" target="_blank">More info in this video.</a> (11 minutes)
+							</li>
+							<li>
+								<strong>Personal</strong> - These workspaces are visible only to you.
+							</li>
+							<li>
+								<strong>Private</strong> - Business and Enterprise users can limit visibility of this workspace to invited members.
+							</li>
+						</ol>
+					</section>
+					<!-- Please Review -->
+					<section id="roles">
+						<h4>Roles in Postman</h4>
+						<p>Postman's role-based access control system gives users the power to tailor visibility and workflows in a way that meets teams' needs.</p>
+						<img src="images/randomPostmanLogo.png">
+					</section>
+					<section>
+						<p>Roles can be divided into 4 levels, each with varying degrees of access. Select a level below to get a closer look into their access details.</p>
+						<ul>
+							<li><a href="https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#team-roles" target="_blank">Team Roles</a></li>
+							<li><a href="https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#workspace-roles" target="_blank">Workspace Roles</a></li>
+							<li><a href="https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#api-roles" target="_blank">API Roles</a></li>
+							<li><a href="https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#collection-roles" target="_blank">Collection Roles</a></li>
+						</ul>
+					</section>
+					<section>
+						<p>As an admin, you can manage roles by navigating to <br> <code>Team > Manage Team > Manage Roles</code> </p><img src="images/manageteam.png"> <br> <img src="images/manageRoles.png">
+						<p>More documentation can be found <a href="https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/" target="_blank">here.</a></p>
+					</section>
+					<section>
+						<p>There are 3 roles now: Admin, Editor, and Viewer.</p>
+						<ul>
+							<li><strong>Admins</strong> have full control over workspace resources and settings.</li>
+							<li><strong>Editors</strong> can create and edit all workspace elements but can't change the workspace's visibility, name, description, and people’s roles in it.</li>
+							<li><strong>Viewers</strong> can view everything in a workspace. They can send requests and fork collections and environments.</li>
+						</ul>
+						<p style="font-size: medium;">Please note that the Collaborator role can no longer be assigned to anyone as it's replaced with Editor and Viewer roles.</p>
+						<p>Role management is available on Business and Enterprise plans only.</p>
+					</section>
+					<!-- Below section may be outdated -->
+					<section>
+						<h4>A Note about Roles and Security</h4>
+						<p><strong><a href="https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#team-roles">Community Manager</a></strong> is a Team role in Postman that can help address concerns about security. In this role, a user can view and manage everything that’s made public by their team. Spend 2 minutes reading about this role and governing public API collections in this <a href="https://blog.postman.com/govern-your-public-api-collections-more-effectively/" target="_blank">blog post</a> by Avinash.</p>
+					</section>
+					<!-- End Review -->
+					<section id="sharing">
+						<h4>Sharing to Workspaces</h4>
+						<p>To share an API, collection, or environment, navigate to the left-most side of Postman to select the element you wish to share. Then, from the dropdown in the "<code>...</code>" menu, select <code><strong>Share __</strong></code>.</p>
+						<p>In the share modal, select the workspace you want to share the entity to. Team members in the target workspace will be able to access the entity when you share it there.</p>
+						<img src="images/selectShare.png">      <img src="images/shareToWS.png">
+					</section>
+					<section>
+						<h4>Other Ways to Share</h4>
+						<p>In addition to sharing to workspaces, elements can be shared via embedding or public JSON link. </p>
+						<img src="images/shareViaLink.png">
+						<p>Be advised that anyone on the internet can see collection information when sharing with a public JSON link, not just those with collection access. This can be managed by /Team Admins and Community Managers using the Public Link Management feature. You can find more information about this in our <a href="https://learning.postman.com/docs/collaborating-in-postman/sharing/">docs.</a></p>
+					</section>
+					<section id="commenting">
+						<h4> Commenting</h4>
+						<p>Commenting allows teams to collaborate live while working on APIs in Postman. There are several ways to comment on various components within collections. Find more information about commenting in <a href="https://learning.postman.com/docs/collaborating-in-postman/commenting-on-collections/" target="_blank">this documentation.</a></p>
+						<img src="images/commenting-on-a-collection-v8.gif">
+					</section>
+					<section id="apiNetwork">
+						<h4>API Network</h4>
+						<img src="images/publicNetwork.gif">
+					</section>
+					<section>
+						<p>The API Network is a centralized repository of APIs, Collections, and Workspaces. You can use API networks to browse what others in the API community are building. There are <strong>public</strong> and <strong>private</strong> API networks.</p>
+						<p>Discoverability of APIs is made possible via the Public and Private API Networks, which can reduce or eliminate redundant work.</p><br>
+						<p>The <strong>Public API Network</strong> allows users to fork others' collections and environments into their own workspaces. You can find it by visiting <a href="https://explore.postman.com" target="_blank">explore.postman.com</a></p><br>
+					</section>
+					<section>
+						<p>You can share the APIs that your team uses internally to the <strong>Private API Network</strong>. Your team can learn about and access these APIs and start using them right away.</p>
+						<p>Users must be granted access into private API networks.</p>
+						<p> Spend 7 minutes with Meenakshi as she explains <a href="https://youtu.be/1SINcytmKsc" target="_blank"> the Private API Network</a></p>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/1SINcytmKsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</section>
+					<section id="versionControl">
+						<h4>Version Control</h4>
+						<p>There are a variety of utilities available within Postman to enable users to version control <a href="https://learning.postman.com/docs/collaborating-in-postman/version-control-for-collections/" target="_blank">collections</a> and <a href="https://learning.postman.com/docs/designing-and-developing-your-api/versioning-an-api/" target="_blank">APIs.</a></p>
+						<p>We can logically divide these utilities into three functions:</p>
+						<ul>
+							<li>Change-Management</li>
+							<li>Change-Notification</li>
+							<li>Change-Recording</li>
+						</ul>
+					</section>
+					<section>
+						<h5>Change-Management</h5>
+						<p>Our change-management utilities allow users to <strong>fork, merge,</strong> see <strong>differences,</strong> and submit <strong>pull requests</strong>. Developer teams use these processes to work together on the same projects.</p>
+						<img src="images/create-a-fork-v2.jpeg" style="width: 36%; height: 36%">
+					</section>
+					<section>
+						<p>Check out Joyce walking through the previously mentioned steps in this 2-minute <a href="https://youtu.be/QKxukXJWRPI" target="_blank">video.</a></p>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/QKxukXJWRPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</section>
+					<section>
+						<h5>Change-Notification</h5>
+						<p>The <strong>watch</strong> option allows you to receive an email/in-app notification when one of your team member belonging to the same workspace modifies the collection. If you watch a collection, you will be notified of actions such as adding a new request, modifying the existing requests, adding or updating variables, editing pre-request scripts or tests, adding or deleting a folder and so on. </p>
+						<p>Find more information about change notifications <a href="https://learning.postman.com/docs/collaborating-in-postman/version-control-for-collections/#watching-a-collection" target="_blank">here.</a></p>
+						<img src="images/collection-watching-overview-v8.jpeg">
+					</section>
+					<section>
+						<h5>Change-Recording</h5>
+						<p>Changes are recorded in the Postman <strong>changelog.</strong></p>
+						<img src="images/changelog.png">
+						<p>The changelog is located on the far right of the Postman application when a collection or API version is selected. The changelog for a workspace is known as <strong>History</strong> and can be found on the far left. You can find it by selecting the clock symbol. <img src="images/changelog symbol.png"></p>
+					</section>
+					<section>
+						<p>Another place to find changes recorded is the "Activity Feed" section of the workspace home page.</p>
+						<img src="images/activity.png" style="width: 50%; height: 50%">
+					</section>
+					<section id="knowledgeCheck3">
+						<h2>Knowledge Check!</h2>
+						<p><strong>Name one way a developer can collaborate within Postman and how that process affects productivity.</strong></p>
+						<p style="font-size: large;">When you feel you can answer the question above, feel free to explore our <strong>Collaboration</strong> mini course, under "Bootcamp", which can be found on the bottom right of the application once you've entered any workspace. </p>
+						<p style="font-size: large;">Got about 40 minutes and need a refresher or just prefer absorbing the material in this learning path differently? Watch Kin, Nick, and Joyce demo what collaboration on a team can look like in Postman <a href="https://youtu.be/XIlWsobZ61Y?t=1080" target="_blank">here.</a></p>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/XIlWsobZ61Y?start=1080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<br><p style="font-size: large;">Click <a href="#learningPath3">here</a> to go back to the top of this learning path.</p>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				slideNumber: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
