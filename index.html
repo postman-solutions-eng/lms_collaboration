@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/solarized.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -18,7 +18,7 @@
 			<div class="slides">
 				<section id="collaborationSlides">
 					<section id="learningPath3">
-						<h3>Collaboration in Postman</h3>
+						<h3>Collaboration with your Team in Postman</h3>
 						<p style="font-size: large;">Postman enables you to collaborate across your organization or across the world. The collaborative nature of Postman ensures that communication throughout API development never has to be a hurdle when forking, merging, writing documentation, making pull requests, and asking for feedback on changes for example.</p>
 						<img src="images/collaborateHero.svg" style="width: 50%; height: 50%">
 						<p style="font-size: medium;"> Select the <img src="images/downArrow.png" alt="down" style="width: 15px; height: 15px"> arrow on the bottom right of this slide to continue to the topics covered in this learning path.</p>
@@ -27,15 +27,11 @@
 						<ul class="list-group">
 							<li class="list-group-item"><a href="#workspaces">Workspaces</a>
 							</li>
-							<li class="list-group-item"><a href="#roles">Roles</a>
-							</li>
 							<li class="list-group-item"><a href="#sharing">Sharing</a>
 							</li>
 							<li class="list-group-item"><a href="#commenting">Commenting</a>
 							</li>
 							<li class="list-group-item"><a href="#versionControl">Version Control</a>
-							</li>
-							<li class="list-group-item"><a href="#apiNetwork">API Network</a>
 							</li>
 							<li class="list-group-item"><a href="#knowledgeCheck3">Knowledge Check</a>
 							</li>
@@ -64,39 +60,6 @@
 						</ol>
 					</section>
 					<!-- Please Review -->
-					<section id="roles">
-						<h4>Roles in Postman</h4>
-						<p>Postman's role-based access control system gives users the power to tailor visibility and workflows in a way that meets teams' needs.</p>
-						<img src="images/randomPostmanLogo.png">
-					</section>
-					<section>
-						<p>Roles can be divided into 4 levels, each with varying degrees of access. Select a level below to get a closer look into their access details.</p>
-						<ul>
-							<li><a href="https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#team-roles" target="_blank">Team Roles</a></li>
-							<li><a href="https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#workspace-roles" target="_blank">Workspace Roles</a></li>
-							<li><a href="https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#api-roles" target="_blank">API Roles</a></li>
-							<li><a href="https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#collection-roles" target="_blank">Collection Roles</a></li>
-						</ul>
-					</section>
-					<section>
-						<p>As an admin, you can manage roles by navigating to <br> <code>Team > Manage Team > Manage Roles</code> </p><img src="images/manageteam.png"> <br> <img src="images/manageRoles.png">
-						<p>More documentation can be found <a href="https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/" target="_blank">here.</a></p>
-					</section>
-					<section>
-						<p>There are 3 roles now: Admin, Editor, and Viewer.</p>
-						<ul>
-							<li><strong>Admins</strong> have full control over workspace resources and settings.</li>
-							<li><strong>Editors</strong> can create and edit all workspace elements but can't change the workspace's visibility, name, description, and people’s roles in it.</li>
-							<li><strong>Viewers</strong> can view everything in a workspace. They can send requests and fork collections and environments.</li>
-						</ul>
-						<p style="font-size: medium;">Please note that the Collaborator role can no longer be assigned to anyone as it's replaced with Editor and Viewer roles.</p>
-						<p>Role management is available on Business and Enterprise plans only.</p>
-					</section>
-					<!-- Below section may be outdated -->
-					<section>
-						<h4>A Note about Roles and Security</h4>
-						<p><strong><a href="https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#team-roles">Community Manager</a></strong> is a Team role in Postman that can help address concerns about security. In this role, a user can view and manage everything that’s made public by their team. Spend 2 minutes reading about this role and governing public API collections in this <a href="https://blog.postman.com/govern-your-public-api-collections-more-effectively/" target="_blank">blog post</a> by Avinash.</p>
-					</section>
 					<!-- End Review -->
 					<section id="sharing">
 						<h4>Sharing to Workspaces</h4>
@@ -114,21 +77,6 @@
 						<h4> Commenting</h4>
 						<p>Commenting allows teams to collaborate live while working on APIs in Postman. There are several ways to comment on various components within collections. Find more information about commenting in <a href="https://learning.postman.com/docs/collaborating-in-postman/commenting-on-collections/" target="_blank">this documentation.</a></p>
 						<img src="images/commenting-on-a-collection-v8.gif">
-					</section>
-					<section id="apiNetwork">
-						<h4>API Network</h4>
-						<img src="images/publicNetwork.gif">
-					</section>
-					<section>
-						<p>The API Network is a centralized repository of APIs, Collections, and Workspaces. You can use API networks to browse what others in the API community are building. There are <strong>public</strong> and <strong>private</strong> API networks.</p>
-						<p>Discoverability of APIs is made possible via the Public and Private API Networks, which can reduce or eliminate redundant work.</p><br>
-						<p>The <strong>Public API Network</strong> allows users to fork others' collections and environments into their own workspaces. You can find it by visiting <a href="https://explore.postman.com" target="_blank">explore.postman.com</a></p><br>
-					</section>
-					<section>
-						<p>You can share the APIs that your team uses internally to the <strong>Private API Network</strong>. Your team can learn about and access these APIs and start using them right away.</p>
-						<p>Users must be granted access into private API networks.</p>
-						<p> Spend 7 minutes with Meenakshi as she explains <a href="https://youtu.be/1SINcytmKsc" target="_blank"> the Private API Network</a></p>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/1SINcytmKsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</section>
 					<section id="versionControl">
 						<h4>Version Control</h4>
